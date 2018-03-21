@@ -31,7 +31,7 @@
             this.A1 = new System.Windows.Forms.Button();
             this.B2 = new System.Windows.Forms.Button();
             this.B3 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
             this.C1 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
@@ -48,87 +48,107 @@
             // 
             // A1
             // 
-            this.A1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.A1.BackColor = System.Drawing.Color.White;
+            this.A1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.A1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.A1.Location = new System.Drawing.Point(12, 42);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(75, 75);
             this.A1.TabIndex = 0;
             this.A1.UseVisualStyleBackColor = false;
+            this.A1.Click += new System.EventHandler(this.buttonClick);
             // 
             // B2
             // 
-            this.B2.BackColor = System.Drawing.SystemColors.Control;
+            this.B2.BackColor = System.Drawing.Color.White;
+            this.B2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B2.Location = new System.Drawing.Point(93, 123);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(75, 75);
             this.B2.TabIndex = 1;
             this.B2.UseVisualStyleBackColor = false;
+            this.B2.Click += new System.EventHandler(this.buttonClick);
             // 
             // B3
             // 
-            this.B3.BackColor = System.Drawing.SystemColors.Control;
+            this.B3.BackColor = System.Drawing.Color.White;
+            this.B3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B3.Location = new System.Drawing.Point(174, 123);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(75, 75);
             this.B3.TabIndex = 2;
             this.B3.UseVisualStyleBackColor = false;
+            this.B3.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button3
+            // C3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(174, 204);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 75);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = false;
+            this.C3.BackColor = System.Drawing.Color.White;
+            this.C3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.C3.Location = new System.Drawing.Point(174, 204);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(75, 75);
+            this.C3.TabIndex = 3;
+            this.C3.UseVisualStyleBackColor = false;
+            this.C3.Click += new System.EventHandler(this.buttonClick);
             // 
             // C1
             // 
-            this.C1.BackColor = System.Drawing.SystemColors.Control;
+            this.C1.BackColor = System.Drawing.Color.White;
+            this.C1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.C1.Location = new System.Drawing.Point(12, 204);
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(75, 75);
             this.C1.TabIndex = 4;
             this.C1.UseVisualStyleBackColor = false;
+            this.C1.Click += new System.EventHandler(this.buttonClick);
             // 
             // B1
             // 
-            this.B1.BackColor = System.Drawing.SystemColors.Control;
+            this.B1.BackColor = System.Drawing.Color.White;
+            this.B1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B1.Location = new System.Drawing.Point(12, 123);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(75, 75);
             this.B1.TabIndex = 5;
             this.B1.UseVisualStyleBackColor = false;
+            this.B1.Click += new System.EventHandler(this.buttonClick);
             // 
             // A3
             // 
-            this.A3.BackColor = System.Drawing.SystemColors.Control;
+            this.A3.BackColor = System.Drawing.Color.White;
+            this.A3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.A3.Location = new System.Drawing.Point(174, 42);
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(75, 75);
             this.A3.TabIndex = 6;
             this.A3.UseVisualStyleBackColor = false;
+            this.A3.Click += new System.EventHandler(this.buttonClick);
             // 
             // A2
             // 
-            this.A2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.A2.BackColor = System.Drawing.Color.White;
+            this.A2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.A2.Location = new System.Drawing.Point(93, 42);
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(75, 75);
             this.A2.TabIndex = 7;
             this.A2.UseVisualStyleBackColor = false;
+            this.A2.Click += new System.EventHandler(this.buttonClick);
             // 
             // C2
             // 
-            this.C2.BackColor = System.Drawing.SystemColors.Control;
+            this.C2.BackColor = System.Drawing.Color.White;
+            this.C2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.C2.Location = new System.Drawing.Point(93, 204);
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(75, 75);
             this.C2.TabIndex = 9;
             this.C2.UseVisualStyleBackColor = false;
+            this.C2.Click += new System.EventHandler(this.buttonClick);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -152,11 +172,12 @@
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -171,7 +192,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -179,17 +200,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(257, 286);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.A2);
             this.Controls.Add(this.A3);
             this.Controls.Add(this.B1);
             this.Controls.Add(this.C1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.C3);
             this.Controls.Add(this.B3);
             this.Controls.Add(this.B2);
             this.Controls.Add(this.A1);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Maroon;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -208,7 +232,7 @@
         private System.Windows.Forms.Button A1;
         private System.Windows.Forms.Button B2;
         private System.Windows.Forms.Button B3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button C3;
         private System.Windows.Forms.Button C1;
         private System.Windows.Forms.Button B1;
         private System.Windows.Forms.Button A3;
