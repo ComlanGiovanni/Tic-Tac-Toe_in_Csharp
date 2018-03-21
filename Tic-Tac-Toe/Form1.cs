@@ -22,19 +22,7 @@ namespace Tic_Tac_Toe
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            playerTurn = true;
-            turnCount = 0;
-
-            try
-            {
-                foreach (Control c in Controls)
-                {
-                    Button b = (Button)c;
-                    b.Enabled = true;
-                    b.Text = "";
-                }
-            }
-            catch { }
+            autoNewGame();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,9 +137,9 @@ namespace Tic_Tac_Toe
             {
                 foreach (Control c in Controls)
                 {
-                    Button b = (Button)c;
-                    b.Enabled = true;
-                    b.Text = "";
+                    Button theButtton = (Button)c;
+                    theButtton.Enabled = true;
+                    theButtton.Text = "";
                 }
             }
             catch { }
