@@ -14,10 +14,12 @@ namespace Tic_Tac_Toe
     {
         bool playerTurn = true;// X Turn -> true , O Turn -> false
         int turnCount = 0;
+        int winStreak = 0; // Positive for X, Negative for O
 
         public Form1()
         {
             InitializeComponent();
+            updateWinStreak("");
         }
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,6 +99,7 @@ namespace Tic_Tac_Toe
                     winner = "0";
                 else
                     winner = "X";
+                updateWinStreak(winner);
 
                 MessageBox.Show(winner + " Wins!", "GG");
                 autoNewGame();
@@ -137,12 +140,52 @@ namespace Tic_Tac_Toe
             {
                 foreach (Control c in Controls)
                 {
-                    Button theButtton = (Button)c;
-                    theButtton.Enabled = true;
-                    theButtton.Text = "";
+                    // This check is important. You can not rely on the exception handling to only process buttons.
+                    // If another type of control is encountered, the exception handling will cause this code to exit
+                    // without necessarily clearing all the buttons.
+                    if (c is Button)
+                    {
+                        (c as Button).Enabled = true;
+                        (c as Button).Text = "";
+                    }
                 }
             }
             catch { }
         } 
+
+        /// <summary>
+        /// Updates the label indicating the current win streak
+        /// </summary>
+        /// <param name="winner">Can take "X" or "O" or any other value to reset</param>
+        private void updateWinStreak(string winner)
+        {
+            if (winner == "X")
+            {
+                if (winStreak < 0) // If O was on a win streak, zero it before incrementing
+                    winStreak = 0;
+                winStreak++;
+            }
+            else if (winner == "O")
+            {
+                if (winStreak > 0) // If X was on a win streak, zero it before decrementing
+                    winStreak = 0;
+                winStreak--;
+            }
+            else
+            {
+                winStreak = 0;
+            }
+
+            winStreakLabel.Visible = (winStreak != 0);
+            winStreakLabel.Text = String.Format("{0} is on a win streak of {1}", winner, Math.Abs(winStreak));
+        }
+
+        private void winStreakLabel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reset the win streak?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                updateWinStreak("");
+            }
+        }
     }
 }
