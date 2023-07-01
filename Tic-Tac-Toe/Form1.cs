@@ -96,7 +96,7 @@ namespace Tic_Tac_Toe
                 String winner = "";
 
                 if (playerTurn)
-                    winner = "0";
+                    winner = "O";
                 else
                     winner = "X";
                 updateWinStreak(winner);
