@@ -37,23 +37,16 @@
             this.A3 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.winStreakLabel = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // A1
             // 
-            this.A1.BackColor = System.Drawing.Color.White;
+            this.A1.BackColor = System.Drawing.Color.DimGray;
             this.A1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.A1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.A1.Location = new System.Drawing.Point(16, 52);
-            this.A1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.A1.Margin = new System.Windows.Forms.Padding(4);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(100, 92);
             this.A1.TabIndex = 0;
@@ -62,10 +55,10 @@
             // 
             // B2
             // 
-            this.B2.BackColor = System.Drawing.Color.White;
+            this.B2.BackColor = System.Drawing.Color.DimGray;
             this.B2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B2.Location = new System.Drawing.Point(124, 151);
-            this.B2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.B2.Margin = new System.Windows.Forms.Padding(4);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(100, 92);
             this.B2.TabIndex = 1;
@@ -74,10 +67,10 @@
             // 
             // B3
             // 
-            this.B3.BackColor = System.Drawing.Color.White;
+            this.B3.BackColor = System.Drawing.Color.DimGray;
             this.B3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B3.Location = new System.Drawing.Point(232, 151);
-            this.B3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.B3.Margin = new System.Windows.Forms.Padding(4);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(100, 92);
             this.B3.TabIndex = 2;
@@ -86,10 +79,10 @@
             // 
             // C3
             // 
-            this.C3.BackColor = System.Drawing.Color.White;
+            this.C3.BackColor = System.Drawing.Color.DimGray;
             this.C3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.C3.Location = new System.Drawing.Point(232, 251);
-            this.C3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.C3.Margin = new System.Windows.Forms.Padding(4);
             this.C3.Name = "C3";
             this.C3.Size = new System.Drawing.Size(100, 92);
             this.C3.TabIndex = 3;
@@ -98,10 +91,10 @@
             // 
             // C1
             // 
-            this.C1.BackColor = System.Drawing.Color.White;
+            this.C1.BackColor = System.Drawing.Color.DimGray;
             this.C1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.C1.Location = new System.Drawing.Point(16, 251);
-            this.C1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.C1.Margin = new System.Windows.Forms.Padding(4);
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(100, 92);
             this.C1.TabIndex = 4;
@@ -110,10 +103,10 @@
             // 
             // B1
             // 
-            this.B1.BackColor = System.Drawing.Color.White;
+            this.B1.BackColor = System.Drawing.Color.DimGray;
             this.B1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B1.Location = new System.Drawing.Point(16, 151);
-            this.B1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.B1.Margin = new System.Windows.Forms.Padding(4);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(100, 92);
             this.B1.TabIndex = 5;
@@ -122,10 +115,10 @@
             // 
             // A3
             // 
-            this.A3.BackColor = System.Drawing.Color.White;
+            this.A3.BackColor = System.Drawing.Color.DimGray;
             this.A3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.A3.Location = new System.Drawing.Point(232, 52);
-            this.A3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.A3.Margin = new System.Windows.Forms.Padding(4);
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(100, 92);
             this.A3.TabIndex = 6;
@@ -134,10 +127,10 @@
             // 
             // A2
             // 
-            this.A2.BackColor = System.Drawing.Color.White;
+            this.A2.BackColor = System.Drawing.Color.DimGray;
             this.A2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.A2.Location = new System.Drawing.Point(124, 52);
-            this.A2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.A2.Margin = new System.Windows.Forms.Padding(4);
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(100, 92);
             this.A2.TabIndex = 7;
@@ -146,67 +139,15 @@
             // 
             // C2
             // 
-            this.C2.BackColor = System.Drawing.Color.White;
+            this.C2.BackColor = System.Drawing.Color.DimGray;
             this.C2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.C2.Location = new System.Drawing.Point(124, 251);
-            this.C2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.C2.Margin = new System.Windows.Forms.Padding(4);
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(100, 92);
             this.C2.TabIndex = 9;
             this.C2.UseVisualStyleBackColor = false;
             this.C2.Click += new System.EventHandler(this.buttonClick);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(343, 28);
-            this.menuStrip1.TabIndex = 10;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newGameToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // newGameToolStripMenuItem
-            // 
-            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.newGameToolStripMenuItem.Text = "New Game";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem1});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem1
-            // 
-            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
-            this.aboutToolStripMenuItem1.Text = "About";
-            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
             // winStreakLabel
             // 
@@ -222,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 386);
             this.Controls.Add(this.winStreakLabel);
@@ -235,17 +176,14 @@
             this.Controls.Add(this.B3);
             this.Controls.Add(this.B2);
             this.Controls.Add(this.A1);
-            this.Controls.Add(this.menuStrip1);
-            this.ForeColor = System.Drawing.Color.Maroon;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.Lime;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tic-Tac-Toe_in_Csharp";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "Tic-Tac-Toe";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,12 +200,6 @@
         private System.Windows.Forms.Button A3;
         private System.Windows.Forms.Button A2;
         private System.Windows.Forms.Button C2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.Label winStreakLabel;
     }
 }
