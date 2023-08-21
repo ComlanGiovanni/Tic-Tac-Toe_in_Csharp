@@ -18,23 +18,10 @@ namespace Tic_Tac_Toe
 
         public Form1()
         {
+            Home startPage = new Home();
+            startPage.ShowDialog();
             InitializeComponent();
             updateWinStreak("");
-        }
-
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            autoNewGame();
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();//Close the App if we click on exit on the strip menu
-        }
-
-        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Tic Tac Toe");//About Section
         }
 
         private void buttonClick(object sender, EventArgs e)
@@ -187,5 +174,6 @@ namespace Tic_Tac_Toe
                 updateWinStreak("");
             }
         }
+
     }
 }
